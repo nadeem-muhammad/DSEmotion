@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <title>Test - DSEMOTION</title>
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/styles/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./assets/styles/dsemotion.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <div class="row">
+                <!-- HEADER -->
+                <div class="col-md-12 mb-12">
+                    <div class="header">
+                        <h1 class="title mb-4">Availability</h1>
+                        <!-- FILTERS -->
+                        <div class="col-md-3 mb-12 filter">
+                            <label>Type of Property</label>
+                            <select class="custom-select d-block w-100" id="property">
+                                <option value="all">All</option>
+                                <option value="house">House</option>
+                                <option value="apartment">Apartment</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-12 filter">
+                            <label>No. of Bedrooms</label>
+                            <select class="custom-select d-block w-100" id="beds">
+                                <option value="all">All</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-12 filter">
+                            <label>Min Price</label>
+                            <select class="custom-select d-block w-100" id="min">
+                                <option value="0">No Min</option>
+                                <option value="250000">£250,0000</option>
+                                <option value="300000">£300,0000</option>
+                                <option value="750000">£750,0000</option>
+                                <option value="1000000">£1000,0000</option>
+                                <option value="2000000">£2000,0000</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-12 filter">
+                            <label>Max Price</label>
+                            <select class="custom-select d-block w-100" id="max">
+                                <option value="0">No Max</option>
+                                <option value="250000">£250,000</option>
+                                <option value="500000">£500,000</option>
+                                <option value="750000">£750,000</option>
+                                <option value="1000000">£1000,000</option>
+                                <option value="2000000">£2000,000</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LIST/GRID transition menu -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="view-wrapper">
+                    <div class="viewer list1 active">
+                        <i class="fas fa-list"></i> List
+                    </div>
+                    <div class="viewer grid1">
+                        <i class="fas fa-th-large"></i> Grid
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <section class="py-5">
+                    <div class="data-container list">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr class="item" data-prop="house" data-beds="4" data-cost="850000">
+                                    <td><img src="assets/images/img1.jpg" width="120"></td>
+                                    <td><span>20</span></td>
+                                    <td><span class="green uppercase bold">NO.41 MUSGRAVE DRIVE</span></td>
+                                    <td><span>4 Bedroom mews house</span></td>
+                                    <td><span>£850,0000</span></td>
+                                    <td><button class="button-more">More Details<i class="fas fa-chevron-right"></i></button></td>
+                                </tr>
+                                <tr class="item" data-prop="house" data-beds="4" data-cost="759959">
+                                    <td><img src="assets/images/img2.jpg" width="120"></td>
+                                    <td><span>23</span></td>
+                                    <td><span class="green uppercase bold">NO.106 Knightly Avenue</span></td>
+                                    <td><span>4 Bedroom townhouse</span></td>
+                                    <td><span>£759,959</span></td>
+                                    <td><button class="button-more">More Details<i class="fas fa-chevron-right"></i></button></td>
+                                </tr>
+                                <tr class="item" data-prop="apartment" data-beds="2" data-cost="409950">
+                                    <td><img src="assets/images/img3.jpg" width="120"></td>
+                                    <td><span>230</span></td>
+                                    <td><span class="green uppercase bold">2 musgrave drive</span></td>
+                                    <td><span>2 Bedroom apartment</span></td>
+                                    <td><span>£409,950</span></td>
+                                    <td><button class="button-more">More Details<i class="fas fa-chevron-right"></i></button></td>
+                                </tr>
+                                <tr class="item" data-prop="house" data-beds="4" data-cost="935000">
+                                    <td><img src="assets/images/img4.jpg" width="120"></td>
+                                    <td><span>199</span></td>
+                                    <td><span class="green uppercase bold">No.118 knightly avenue</span></td>
+                                    <td><span>4 Bedroom townhouse</span></td>
+                                    <td><span>£935,000</span></td>
+                                    <td><button class="button-more">More Details<i class="fas fa-chevron-right"></i></button></td>
+                                </tr>
+                                <tr class="item" data-prop="house" data-beds="5" data-cost="1250000">
+                                    <td><img src="assets/images/img5.jpg" width="120"></td>
+                                    <td><span>45</span></td>
+                                    <td><span class="green uppercase bold">86 Knightly Avenue</span></td>
+                                    <td><span>5 Bedroom house</span></td>
+                                    <td><span>£1,250,000</span></td>
+                                    <td><button class="button-more">More Details<i class="fas fa-chevron-right"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="my-5 text-muted text-center text-small">
+            <p class="mb-1">© 2018 - Nadeem DSEMOTION</p>
+        </footer>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+    window.jQuery || document.write('<script src="./assets/js/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/holder.min.js"></script>
+    <script>
+    // FUNCTION start to filter selectiosn based on data-*
+    (function() {
+        'use strict';
+
+
+
+
+        $(document).ready(function() {
+            // GETTING REFERENCES
+            var items = $(".item");
+            var prop = $("#property");
+            var beds = $("#beds");
+            var min = $("#min");
+            var max = $("#max");
+
+            // ADDING EVENT LISTERNER ON DROPDOWNS
+            $("select").change(applyFilter);
+
+            // FILTER FUNCTION
+            function applyFilter() {
+
+                // ITERATING ALL RECORDS/ROWS
+                items.each((indx, item) => {
+                    // GETTING COST OF PROPERTY
+                    var cost = parseInt($(item).attr("data-cost"));
+                    // CHECKING TYPE OF PROPERTY
+                    var type = prop.val() == "all" ? true : $(item).attr("data-prop") == prop.val();
+                    // CHECKING BEDS OF PROPERTY
+                    var bedFlag = beds.val() == "all" ? true : $(item).attr("data-beds") == beds.val();
+
+                    // CHECKING COST & COMBINING RESULT OF OTHER FILTERS
+                    if ((cost >= min.val() && cost <= (max.val() == "0" ? cost + 1 : max.val())) && bedFlag && type) {
+                        // REMOVING CLASS
+                        $(item).removeClass("hidden");
+                    } else {
+                        // ADDING CLASS
+                        $(item).addClass("hidden");
+                    }
+                })
+            }
+
+            // REGISTERING VIEW CHANGE LISTERNERS
+            $(".list1").on('click', () => changeView('list'));
+            $(".grid1").on('click', () => changeView('grid'));
+
+            // FUNCTION TO CHANGE VIEW FROM LIST/GRID
+            function changeView(view) {
+                console.log("view switched!");
+                // CHANGING CLASS OF DATA CONTAINER
+                $(".data-container").attr('class', 'data-container ' + view);
+                // REMOVING CURRENT ACTIVE CLASS
+                $(".active").removeClass("active");
+                // ADDING ACTIVE CLASS TO SELECTED OPTION(LIST/GRID)
+                $("." + view + "1").addClass("active");
+            }
+        })
+
+
+
+
+
+
+    })();
+    </script>
+</body>
+
+</html>
